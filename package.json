@@ -1,0 +1,21 @@
+{
+  "name": "telebot",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch ./src/index.ts",
+    "build": "bun build --outfile out/telebot --compile ./src/index.ts",
+    "start": "./out/telebot"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@typegoose/typegoose": "^11.5.0",
+    "mongoose": "^7.5.4",
+    "telegraf": "^4.14.0"
+  }
+}
